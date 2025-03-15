@@ -3,71 +3,124 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Maxime Heuillet | Portfolio</title>
+  <title>Maxime Heuillet | Academic Portfolio</title>
   <style>
     body {
-      font-family: "Segoe UI", sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
+      font-family: 'Helvetica Neue', sans-serif;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+      line-height: 1.6;
       color: #333;
     }
     header {
-      background-color: #111827;
-      color: white;
-      text-align: center;
-      padding: 80px 20px 40px;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
     }
-    header h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
+    header img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
     }
-    header p {
-      font-size: 1.3em;
-      margin-bottom: 20px;
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.2rem;
     }
-    .btn {
-      display: inline-block;
-      padding: 12px 24px;
-      margin: 10px;
-      background-color: #2563eb;
-      color: white;
+    h2 {
+      font-size: 1.6rem;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 0.2rem;
+      margin-top: 2.5rem;
+    }
+    a {
+      color: #0077cc;
       text-decoration: none;
-      border-radius: 6px;
-      transition: background 0.3s ease;
     }
-    .btn:hover {
-      background-color: #1e40af;
+    a:hover {
+      text-decoration: underline;
     }
-    section {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
+    ul {
+      padding-left: 1.2rem;
     }
-    section h2 {
-      font-size: 1.8em;
-      border-bottom: 2px solid #ddd;
-      margin-bottom: 15px;
-      padding-bottom: 5px;
-      color: #111827;
-    }
-    footer {
-      text-align: center;
-      padding: 40px 20px;
-      background-color: #e5e7eb;
-      font-size: 0.9em;
-    }
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2em;
-      }
+    .contact a {
+      display: inline-block;
+      margin-right: 1rem;
+      margin-top: 0.3rem;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Maxime Heuillet</h1>
-    <p>Engineer | Scientist | Innovator</p>
-    <a href="cv.pdf" class="btn" download>📄 Download Resume</a>
-    <a href="https://github.com/MaxHeuillet" class="btn" targe
+    <img src="IMG_0956.JPG" alt="Maxime Heuillet Photo">
+    <div>
+      <h1>Maxime Heuillet</h1>
+      <p>Ph.D. Candidate in Computer Science, Université Laval & MILA</p>
+      <p>Researcher in Reinforcement Learning and Statistical Machine Learning</p>
+      <div class="contact">
+        <a href="mailto:maxime.heuillet.1@ulaval.ca">Email</a>
+        <a href="https://github.com/MaxHeuillet" target="_blank">GitHub</a>
+        <a href="https://scholar.google.ca/citations?user=SduUuGQAAAAJ&hl=en" target="_blank">Google Scholar</a>
+        <a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEhbgCJRaJD4AAAAZWaljxgYyDka3mtP6JKidBgZhkeIY4LqrbraLEoZziHoP20KezSEWtS1-UVsFAy_AG8Kg02_lcM6tNyJkY5FfTc9nWQuVpJPGiF2pY7krQtjT3hGDNZjRg=&original_referer=https://www.google.com/&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fin%2Fmaxime-heuillet-955897139%2Fen" target="_blank">LinkedIn</a>
+        <a href="maxheuillet_cv_2025mar.pdf" target="_blank">Download CV</a>
+      </div>
+    </div>
+  </header>
+
+  <h2>About Me</h2>
+  <p>
+    I am a Ph.D. candidate in Computer Science at Université Laval and MILA – Québec AI Institute. My research lies at the intersection of interactive learning, statistical learning, and automated machine learning. I'm particularly interested in building robust, efficient, and generalizable ML systems, with a strong emphasis on theoretical foundations and practical applications.
+  </p>
+
+  <h2>Research Interests</h2>
+  <ul>
+    <li>Reinforcement Learning & Sequential Decision Making</li>
+    <li>Bandits & Game Theory</li>
+    <li>Large Language Models & Efficient Fine-Tuning</li>
+    <li>AutoML and Recommender Systems</li>
+  </ul>
+
+  <h2>Selected Publications</h2>
+  <ul>
+    <li><strong>Accelerated Large Language Model Reinforced Fine-Tuning</strong> (in preparation)</li>
+    <li><strong>Understanding the Influence of Design Choices on Generalization in Robust Fine-tuning</strong> (in preparation)</li>
+    <li>Randomized Approaches to Partial Monitoring. <em>Conference Main Track, 2024</em></li>
+    <li>Neural Methods for Partial Monitoring. <em>Conference Main Track, 2024</em></li>
+    <li>Workshop papers at NeurIPS, ICML, AAAI, RecSys, etc.</li>
+  </ul>
+
+  <h2>Experience</h2>
+  <ul>
+    <li><strong>Noah’s Ark Lab (Huawei)</strong> – Associate Researcher, Efficient RL Fine-Tuning for LLMs</li>
+    <li><strong>Thales CortAIx Lab</strong> – Research Intern, Recommender Systems & Risk-Sensitive RL</li>
+    <li><strong>CREST / Inria / UCSF</strong> – Research Internships in ML & Social Data Analysis</li>
+  </ul>
+
+  <h2>Awards & Scholarships</h2>
+  <ul>
+    <li>Mitacs Accelerate Doctoral Scholarship (135,000 CAD)</li>
+    <li>IVADO Travel Grant, UAI 2024 Conference Scholarship</li>
+    <li>Alliance Computing Resources Award, Laval AI Excellence Award</li>
+  </ul>
+
+  <h2>Teaching & Mentorship</h2>
+  <ul>
+    <li>Reinforcement Learning Teaching Assistant (2022–2023)</li>
+    <li>Supervised multiple MSc internships and theses</li>
+  </ul>
+
+  <h2>Community Engagement</h2>
+  <ul>
+    <li>Reviewer: ICML, NeurIPS, Montreal AI Symposium, etc.</li>
+    <li>Organizer: Mila Workshop on RL, ICML Workshop on Pac-Bayes Meets Interactive Learning</li>
+    <li>Podcast Contributor: Café IA</li>
+  </ul>
+
+  <footer style="margin-top:3rem; font-size: 0.9rem; color: #666;">
+    &copy; Maxime Heuillet · Last updated 2025
+  </footer>
+
+</body>
+</html>
